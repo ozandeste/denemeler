@@ -1,0 +1,20 @@
+#ifndef PROCESS_STACK_MANAGER_H
+#define PROCESS_STACK_MANAGER_H
+
+#include <stack>
+#include <string>
+#include <iostream>
+
+class ProcessStackManager {
+private:
+    std::stack<int> processStack;
+
+public:
+    void push(int processID);
+    void pop();
+    int top() const;
+    bool empty() const;  // Yeni fonksiyon ekledim
+    void printStack() const;
+};
+
+#endif // PROCESS_STACK_MANAGER_H

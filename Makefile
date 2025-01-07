@@ -1,13 +1,12 @@
 # Derleyici
 CXX = g++
-CXXFLAGS = -std=c++17 -Wall -Iinclude
+CXXFLAGS = -std=c++17 -Wall -Iinclude -g  # Debug için -g ekledim
 
 # Hedef kaynak
 TARGET = build/main
 SRC = Main.cpp src/DeadlockManager.cpp src/ProcessStackManager.cpp
 
-
-# dERLEME KURALLARI
+# Derleme kuralları
 all: ${TARGET}
 
 ${TARGET}: ${SRC}
